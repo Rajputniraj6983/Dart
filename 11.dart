@@ -3,16 +3,19 @@ import 'dart:io';
 
 void main()
 {
-  int n = 20;
+   int n ;
+   int f = 0;
+   int s = 1;
+   int ans;
 
-  stdout.write("enter the nummber of n ");
-  n=int.parse(stdin.readLineSync()!);
+   stdout.write("enter the nummber of n ");
+   n=int.parse(stdin.readLineSync()!);
 
-  for (int i=1;i<=15;i++)
+  for (int i=1;i<=n;i++)
   {
-    n = += i;
-     if(i == 1);
-     print("$n");
-
+     ans = f+s;
+     print("$ans");
+     f = s;
+     s = ans;
   }
 }
